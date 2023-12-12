@@ -1,0 +1,391 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.app-container {
+    background: #ffffff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #dbdbdb;
+    padding: 20px;
+    margin: 30px 0px;
+}
+
+.logo-class > img {
+    max-width: 100px;
+}
+
+.navigation-class > ul {
+    list-style-type: none;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-list > li {
+    font-weight: 900;
+}
+
+.restaurant-filters {
+    display: flex;
+    gap: 30px;
+}
+
+.btn-contanier {
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #abe7ab;
+}
+
+.search-restraunts {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.app-login-btn {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+}
+
+.restaurant-contanier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    justify-items: center;
+    border: 2px solid #dbdbdb;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+}
+
+/* restaurant-cards */
+.restaurant-cards {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    scale: 1;
+    transition: scale 0.5s ease-in-out;
+    height: 500px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restaurant-cards:hover {
+    scale: 1.02;
+    transition: scale 0.5s ease-in-out;
+}
+
+.restaurant-image {
+    margin-bottom: 20px;
+}
+
+.restaurant-image > img {
+    max-width: 100%;
+    width: 100%;
+    max-height: 13rem;
+    object-fit: cover;
+}
+
+.restaurant-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.restaurant-name-cusine {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.restaurant-name {
+    margin: 0;
+    font-weight: 900;
+}
+
+.restaurant-cusine {
+    font-size: 14px;
+}
+
+.restaurant-ratings-eta {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.restaurant-ratings > span {
+    background: #85f585;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.restaurant-description {
+    margin-bottom: 20px;
+}
+
+.restaurant-share {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.restaurant-eta {
+    font-size: 12px;
+}
+/* restaurant-cards */
+
+/* skeleton-loader */
+.restaurant-skeleton-card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 20px;
+    transition: scale 0.5s ease-in-out;
+    scale: 1;
+}
+
+.restaurant-skeleton-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skeleton-img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: 15rem;
+}
+
+.heading-1 {
+    height: 10px;
+    width: 100%;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.heading-2 {
+    height: 10px;
+    width: 70%;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.skeleton {
+    animation: skeleton-animate 1s linear infinite alternate;
+}
+
+@keyframes skeleton-animate {
+    0% {
+        opacity: 0.7;
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+/* skeleton-loader */
+
+/* About */
+.about-me {
+    padding: 20px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* About */
+
+/* restro-menu */
+.restro-menu-container {
+    max-width: min(50%, 2000px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.restro-layout {
+    border: 2px solid #dbdbdb;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.restro-name {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.restro-cusine {
+    font-size: 16px;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.res-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.restro-item-details {
+    /* cursor: pointer; */
+    border: 1px solid #000;
+    border-radius: 10px;
+    /* max-width: 400px; */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 800px;
+}
+
+.restro-cusine-list {
+    font-size: 24px;
+}
+
+.restro-cusine-img {
+    max-width: 100%;
+}
+
+.img-and-add {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.checkout-container {
+    flex-direction: column;
+    gap: 60px;
+    max-width: min(50%, 2000px);
+    margin: 0 auto;
+    display: flex;
+}
+
+.cart-box {
+    border: 2px solid #dad5d5;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.checkout {
+    font-size: 32px;
+    text-align: center;
+}
+
+.checkout-details {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cart-container {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.item-cart-list {
+    display: flex;
+}
+
+.item-cart-list > p {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* restro-menu */
+
+/* cart */
+.cart-btn {
+    padding: 20;
+    background-color: #abe7ab;
+    border: none;
+    border-radius: 30px;
+    color: #111111;
+    cursor: pointer;
+}
+/* cart */
+
+/* scribble */
+.scribble-filters {
+    display: flex;
+    gap: 30px;
+}
+
+.scribble-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    justify-items: center;
+    border: 2px solid #dbdbdb;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+}
+/* scribble */
